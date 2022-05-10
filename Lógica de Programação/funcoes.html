@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+
+<script>
+    function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+	
+    function pulaLinha() {
+
+        document.write("<br><hr><br>");
+    }
+	
+	function escrever(texto){
+		
+		document.write("<big>"+texto+"</big>");
+		pulaLinha();
+	}
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    escrever("<h1>" + titulo + "</h1>");
+
+    escrever("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    escrever("Contudo, assistindo os vídeos e estudando ...");
+
+    escrever("Eu vou mais longe!");
+	
+	var idadeBruno = 43;
+	var idadeHeitor = 44;
+	var diferencaDeIdade = idadeHeitor-idadeBruno;
+	
+	escrever("Heitor tem 44 anos e Bruno tem 43 anos e são irmãos");
+	escrever("A diferença de Idade entre eles é "+ diferencaDeIdade+" ano(s)");
+	
+	escrever("Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?");
+	
+	var anoInicial = 1500;
+	var anoAtual = 2022;
+	var idadeMediaquandoTemFilhos = 28
+	var quantidadeDeGeracoes = Math.round((anoAtual-anoInicial)/idadeMediaquandoTemFilhos);
+	
+	escrever("de "+ anoInicial+" até "+anoAtual+" se passaram "+quantidadeDeGeracoes+" gerações.");
+	
+	var ano = 2019;
+	escrever("Eu nasci em : " + (ano - 25));
+	escrever("Adriano nasceu em : " + (ano - 26));
+	escrever("Paulo nasceu em : " + (ano - 32));
+
+
+ //   fazPegadinha();
+//	document.write("<center><h1>Acabou!!!</h1></center>");
+
+
+
+	function fazPegadinha(frase) {
+        alert(frase);        
+    }
+		
+//	fazPegadinha("Olá");
+//	fazPegadinha("amiga!");
+//	fazPegadinha("Tá");
+//	fazPegadinha("bastante");
+//	fazPegadinha("entediada?");
+//	fazPegadinha("Em ficar");
+//	fazPegadinha("Clicando em");
+//	fazPegadinha("Ok");
+//	fazPegadinha("né?");
+	
+//	document.write("<center><h1>Acabou!!!</h1></center>")
+	
+</script>

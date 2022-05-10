@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<script>
+ function pulaLinha() {
+
+        document.write("<br>");
+    }
+	
+	function mostra(texto){
+		
+		document.write("<big>"+texto+"</big>");
+		pulaLinha();
+	}
+
+	var cont2 = 10;
+	while(cont2 >= 0){
+		mostra(cont2);
+		cont2--;
+	}
+	mostra("FIM!!!");
+
+	var cont = 30;
+	
+	while(cont <= 40){
+		if(cont == 33 || cont == 37){
+			cont = cont+1;
+		}		
+		mostra(cont);
+		cont++;
+	}
+	mostra("FIM!!!");
+	
+	
+	/*
+	var cont = 2;
+	var cont2 = 1
+	
+	while(cont <=100){
+		mostra(cont2+" - Númro: "+cont);
+		cont++;
+		cont2++;
+	}
+	mostra("FIM!!!");
+	*/
+	
+	
+	
+	
+</script>

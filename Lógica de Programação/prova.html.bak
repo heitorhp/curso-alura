@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+	document.write("Eu acertei: "+ ((15/50)*100)+"%");
+</script>
+
+<br>
+<script>
+    document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
+</script>
+<br>
+<script>
+
+	var n =4;
+    document.write("O resultado da fórmula é : " + n * (10 / 20)  );
+</script>
+<br>
+
+<script>
+    var minhaIdade = 20;
+
+    document.write("Eu nasci em " + (2016 - minhaIdade) );
+	
+	var media = (39+20+41)/3;
+	document.write("<br>a média das idades é " + media);
+	document.write("<br>a média das idades é " + Math.round(media));
+</script>
+<br><br>
+
+<script>
+	var tabuada = 8;
+    document.write("<h3>Tabuada de " + tabuada+ "</h3><br>");
+    document.write(tabuada+ " vezes 1 é -> " + tabuada * 1+ "<br>");
+    document.write(tabuada+ " vezes 2 é -> " + tabuada * 2+ "<br>");
+    document.write(tabuada+ " vezes 3 é -> " + tabuada * 3+ "<br>");
+    document.write(tabuada+ " vezes 4 é -> " + tabuada * 4+ "<br>");
+    document.write(tabuada+ " vezes 5 é -> " + tabuada * 5+ "<br>");
+    document.write(tabuada+ " vezes 6 é -> " + tabuada * 6+ "<br>");
+    document.write(tabuada+ " vezes 7 é -> " + tabuada * 7+ "<br>");
+    document.write(tabuada+ " vezes 8 é -> " + tabuada * 8+ "<br>");
+    document.write(tabuada+ " vezes 9 é -> " + tabuada * 9+ "<br>");
+    document.write(tabuada+ " vezes 10 é -> " + tabuada * 10+ "<br>");
+</script>
