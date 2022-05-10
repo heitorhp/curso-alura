@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+
+<script>
+
+	function sorteia(){
+		var numeroSorteado = Math.round(Math.random() * 10);
+		return numeroSorteado;		
+	}
+	
+	function soteiaNumeros(quantidade){
+		var segredos = [];
+		var numero=1;
+		while(numero <=quantidade){
+			
+			var numeroAleatorio = sorteia();
+			
+			if(numeroAleatorio !== 0){
+				
+				var achou = false;
+				
+				for(var posicao=0; posicao<segredos.length; posicao++){
+					if(segredos[posicao]==numeroAleatorio){
+						achou=true;
+						break;
+					}
+				}
+				if(achou == false){
+					segredos.push(sorteia());
+					numero++;
+				}
+			}
+			
+			
+			
+		}
+		return segredos;
+	}
+
+	var segredos = soteiaNumeros(3);
+	
+	var input = document.querySelector("input");
+	input.focus();
+	
+	function verifica(){
+		var achou = false;
+		for(var posicao = 0; posicao < segredos.length; posicao++){
+			if(input.value == segredos[posicao]){
+				alert("Você ACERTOU!!!");
+				achou = true;
+				break;
+			}				
+		}		
+		if(achou == false){
+			alert("Você ERROU!!!!!!!");
+		}	
+		
+		input.value = "";
+		input.focus();
+	}
+	
+	var button = document.querySelector("button");
+	button.onclick = verifica;
+	document.write("<br>FIM");
+	
+/* 	var parcelas = [10.40, 40.00, 100.18, 200];
+	for(var i = 0; i < parcelas.length; i++) {
+		document.write("<br>parcela "+(i+1)+" = "+parcelas[i]);
+	}
+	document.write("<br>FIM");
+	
+	var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+	for(var i = 0; i < jogadores.length; i++) {
+		document.write("<br>Jogador: "+jogadores[i]);
+	}
+	document.write("<br>FIM"); */
+
+</script>

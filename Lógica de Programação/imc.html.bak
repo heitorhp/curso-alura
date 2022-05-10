@@ -1,0 +1,78 @@
+<meta charset="UTF-8">
+
+<script>
+ function pulaLinha() {
+
+        document.write("<br><hr><br>");
+    }
+	
+	function mostra(texto){
+		
+		document.write("<big>"+texto+"</big>");
+		pulaLinha();
+	}
+	
+	
+//	var nomeDaPessoa = "Heitor";
+//	var peso = 95;
+//	var altura = 1.73;	
+	function calculaIma2(peso,altura){
+		
+		var imc = Math.round(peso/(altura*altura));		
+		return imc;
+	}
+	function soma(valor1,valor2){
+		var total = valor1+valor2;
+		return total;
+	}
+	function calculaImc(nome, peso, altura){
+		
+		var imc = Math.round(peso/(altura*altura));		
+		
+		mostra("O IMC de "+nome+" é "+imc);		
+	}
+	
+	var nomeInformado = prompt("Informe seu nome:");
+	var alturaInformada = prompt(nomeInformado+" Informe sua altura:");
+	var pesoInformado = prompt(nomeInformado+" Informe seu peso:");
+	
+	var exibirImc = calculaIma2(pesoInformado, alturaInformada);
+	
+	mostra("O IMC de "+nomeInformado+" calculado é "+exibirImc);
+	
+	if(exibirImc < 18.5){
+		mostra("Você estar abaixo do recomendado! :(");		
+	}
+	if(exibirImc > 35){
+		mostra("Você estar acima do recomendado! :(");
+	}
+	if(exibirImc >= 18.5 && exibirImc <= 35){
+		
+		mostra("Seu IMC está excelente");
+				
+	}
+	
+	
+	
+	
+	
+
+/*	calculaImc("Heitor",95, 1.73);
+	calculaImc("Bruno",123, 1.75);
+	
+	var heitor = calculaIma2(95,1.73);
+	var bruno = calculaIma2(123,1.75);
+	var totalSoma = soma(heitor, bruno);
+	
+	escrever("a sola dos IMC's é "+totalSoma);
+	*/
+
+	
+	
+	
+	
+	
+	
+	
+
+</script>

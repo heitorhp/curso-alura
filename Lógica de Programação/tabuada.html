@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+ function pulaLinha() {
+
+        document.write("<br>");
+    }
+	
+	function mostra(texto){
+		
+		document.write("<big>"+texto+"</big>");
+		pulaLinha();
+	}
+
+	var tabuada = parseInt(prompt("Informe qual a tabuada que exibir."));
+	
+	mostra("<h1>exibindo a tabuada de "+tabuada+"</h1>");
+	
+	for(var multiplicador = 1;multiplicador <=10; multiplicador++){
+		resultador = tabuada * multiplicador;
+		mostra(tabuada+" X "+ multiplicador+" = "+resultador );
+		
+	}
+	mostra("FIM");
+	
+	
+	for( var i = 0; i < 10; i++ ) {
+		mostra( "O resultado é " + (2 * i) );
+	}
+	mostra("FIM");
+	var i = 0;
+	while(i < 10) {
+		mostra( "O resultado é " + (2 * i) );
+		i++;
+	}
+	mostra("FIM");
+
+
+
+/*
+	var multiplicador = 1;
+	var tabuada = parseInt(prompt("Informe qual a tabuada que exibir."));
+	
+	mostra("<h1>exibindo a tabuada de "+tabuada+"</h1>");
+	
+	while(multiplicador <=10){
+		resultador = tabuada * multiplicador;
+		mostra(tabuada+" X "+ multiplicador+" = "+resultador );
+		multiplicador = multiplicador+1;
+	}
+	mostra("FIM");
+	*/
+	
+</script>

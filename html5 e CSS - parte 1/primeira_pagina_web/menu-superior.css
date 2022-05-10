@@ -1,0 +1,34 @@
+header{
+    
+}
+.caixa{
+    background: #bbbbbb;
+    padding: 20px 0;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline; /*colocar lista em linha*/
+    margin: 0 0 0 15px; /*espaço entre palavras*/
+}
+nav a{
+    text-transform: uppercase; /*texto em maiuculo*/
+    color: #000000;
+    font-weight: bold; /*letra mais grossa*/
+    font-size: 22px;
+    text-decoration: none; /*link sem sublinhado*/
+}
+nav a:hover{ /*alterando com´portamneto na página*/
+    color: #c78c19;
+    text-decoration: underline;
+}
+.titulo-principal{
+    padding-left: 20px;
+}
